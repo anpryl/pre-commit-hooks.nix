@@ -78,6 +78,13 @@ in {
           entry = "${tools.nixpkgs-fmt}/bin/nixpkgs-fmt";
           files = "\\.nix$";
         };
+      nix-linter =
+        {
+          name = "nix-linter";
+          description = "Linter for the Nix expression language.";
+          entry = "${tools.nix-linter}/bin/nix-linter";
+          files = "\\.nix$";
+        };
       elm-format =
         {
           name = "elm-format";
